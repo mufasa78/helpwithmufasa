@@ -21,12 +21,11 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'Market Research Dashboard',
-      description: 'Interactive dashboard for real-time market analysis and insights with predictive analytics.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-      tags: ['Data Analysis', 'Python', 'Visualization'],
-      link: 'https://example.com',
-      github: 'https://github.com',
+       title: 'Stray Dog Platform',
+      description: 'Interactive platform to track stray dogs and facilitate adoption. Features real-time map visualizations, reporting tools, and community engagement for animal welfare.',
+      image: 'https://i.postimg.cc/W42StDd5/charlesdeluvio-Dzi-ZIYOGAHc-unsplash.jpg',
+      tags: ['Animal Welfare', 'MERN Stack', 'Visualization', 'Mapping', 'Community'],
+      github: 'https://github.com/mufasa78/straydogplatform',
       featured: true
     }
   ];

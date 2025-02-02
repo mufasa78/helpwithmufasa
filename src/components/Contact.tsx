@@ -70,8 +70,8 @@ const Contact = () => {
                   Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
                 </p>
                 <div className="flex gap-4">
-                  <SocialLink href="https://github.com/Mufasa78" icon={Github} label="GitHub" />
-                  <SocialLink href="www.linkedin.com/in/stanley-gathekia-" icon={Linkedin} label="LinkedIn" />
+                  <SocialLink href="#" icon={Github} label="GitHub" />
+                  <SocialLink href="#" icon={Linkedin} label="LinkedIn" />
                   <SocialLink href="#" icon={Twitter} label="Twitter" />
                 </div>
               </div>

@@ -1,3 +1,4 @@
+// components/Contact.tsx
 import React, { useState } from 'react';
 import { Github, Linkedin, Twitter, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
@@ -42,7 +43,8 @@ const Contact = () => {
       toast.success('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      toast.error('Failed to send message. Please try again.');
+      const errorMessage = (error as { text: string }).text || 'Failed to send message. Please try again.';
+      toast.error(errorMessage);
       console.error('Email error:', error);
     } finally {
       setIsSubmitting(false);
@@ -70,9 +72,9 @@ const Contact = () => {
                   Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
                 </p>
                 <div className="flex gap-4">
-                  <SocialLink href="#" icon={Github} label="GitHub" />
-                  <SocialLink href="#" icon={Linkedin} label="LinkedIn" />
-                  <SocialLink href="#" icon={Twitter} label="Twitter" />
+                  <SocialLink href="https://github.com/mufasa78" icon={Github} label="GitHub" />
+                  <SocialLink href="www.linkedin.com/in/stanley-gathekia-" icon={Linkedin} label="LinkedIn" />
+                  <SocialLink href="https://twitter.com/Mufasa746" icon={Twitter} label="Twitter" />
                 </div>
               </div>
 
@@ -133,7 +135,7 @@ const Contact = () => {
   );
 };
 
-const SocialLink = ({ href, icon: Icon, label }: { href: string; icon: any; label: string }) => (
+const SocialLink = ({ href, icon: Icon, label }: { href: string; icon: React.FC<{ className?: string }>; label: string }) => (
   <a
     href={href}
     className="p-3 bg-white/5 rounded-full hover:bg-white/10 transition-colors"

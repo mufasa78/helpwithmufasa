@@ -36,7 +36,7 @@ const Contact = () => {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_name: "Site Owner", // You can customize this
+          to_name: "Mufasa", // You can customize this
         }
       );
 

@@ -10,7 +10,7 @@ const Projects = () => {
       description: 'A full-stack electric vehicle website that showcases various EV models, provides detailed information about their features, and includes a charging station locator built with React, Node.js, Vite, and Tailwind CSS.',
       image: 'https://i.postimg.cc/0QGrbG9f/3d-electric-car-with-charged-battery.jpg',
       tags: ['React', 'Node.js', 'Vite', 'Tailwind CSS', 'API Integration', 'Maps API'],
-      link: 'https://utucars.netlify.app/',
+      link: 'https://utucars.africa/',
       github: 'https://github.com/mufasa78/utucars/',
       featured: true
     },
